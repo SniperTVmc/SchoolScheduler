@@ -11,6 +11,7 @@ public class Building {
 	private final UUID uuid;
 
 	private School school;
+
 	private String displayName;
 
 
