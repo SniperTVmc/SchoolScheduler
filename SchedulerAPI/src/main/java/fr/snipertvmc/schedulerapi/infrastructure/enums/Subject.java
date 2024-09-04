@@ -1,0 +1,18 @@
+package fr.snipertvmc.schedulerapi.infrastructure.enums;
+
+public enum Subject {
+	FRENCH,
+	PHILOSOPHY,
+	HISTORY_GEOGRAPHY,
+	MATHEMATICS,
+	PHYSICS_CHEMISTRY,
+	SCIENCES,
+	TECHNOLOGY,
+	ENGLISH,
+	SPANISH,
+	ITALIAN,
+	GERMAN,
+	PHYSICAL_EDUCATION,
+	MUSICAL_EDUCATION,
+	ART,
+}
