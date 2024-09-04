@@ -16,6 +16,7 @@ public class Class {
 
 	private School school;
 
+	private String name;
 	private String headTeacher;
 	private List<Student> students;
 
@@ -45,6 +46,20 @@ public class Class {
         this.school = school;
         return this;
     }
+
+
+	// -------------------------------------------------- //
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public Class setName(String name) {
+		this.name = name;
+		return this;
+	}
 
 
 	// -------------------------------------------------- //
