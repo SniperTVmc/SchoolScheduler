@@ -13,7 +13,13 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Logger.info("Hello world!");
+		Logger.info("\n" +
+				"\n" +
+				"\n" +
+				"\tHello world!\n" +
+				"\n" +
+				"\n"
+		);
 	}
 
 
