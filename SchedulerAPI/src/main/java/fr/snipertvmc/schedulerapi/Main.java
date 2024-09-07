@@ -1,5 +1,7 @@
 package fr.snipertvmc.schedulerapi;
 
+import fr.snipertvmc.schedulerapi.utilities.Logger;
+
 public class Main {
 
 
@@ -11,9 +13,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		System.out.println("Hello world!");
-
-		//instance = this;
+		Logger.info("Hello world!");
 	}
 
 
