@@ -6,7 +6,7 @@ import fr.snipertvmc.schedulerapi.infrastructure.utilities.places.School;
 import java.util.List;
 import java.util.UUID;
 
-public class Class {
+public class SchoolClass {
 
 
 	// -------------------------------------------------- //
@@ -21,7 +21,7 @@ public class Class {
 	private List<Student> students;
 
 
-	public Class(UUID uuid) {
+	public SchoolClass(UUID uuid) {
 		this.uuid = uuid;
 	}
 
@@ -29,7 +29,7 @@ public class Class {
 	// -------------------------------------------------- //
 
 
-	public UUID getUuid() {
+	public UUID getUUID() {
 		return uuid;
 	}
 
@@ -42,7 +42,7 @@ public class Class {
     }
 
 
-	public Class setSchool(School school) {
+	public SchoolClass setSchool(School school) {
         this.school = school;
         return this;
     }
@@ -56,7 +56,7 @@ public class Class {
 	}
 
 
-	public Class setName(String name) {
+	public SchoolClass setName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -70,7 +70,7 @@ public class Class {
     }
 
 
-	public Class setHeadTeacher(String headTeacher) {
+	public SchoolClass setHeadTeacher(String headTeacher) {
         this.headTeacher = headTeacher;
         return this;
     }
@@ -84,7 +84,7 @@ public class Class {
     }
 
 
-	public Class addStudent(Student student) {
+	public SchoolClass addStudent(Student student) {
 		List<Student> students = this.students;
 		students.add(student);
         this.students = students;
@@ -92,7 +92,7 @@ public class Class {
     }
 
 
-	public Class removeStudent(Student student) {
+	public SchoolClass removeStudent(Student student) {
 		List<Student> students = this.students;
 		students.remove(student);
 		this.students = students;
