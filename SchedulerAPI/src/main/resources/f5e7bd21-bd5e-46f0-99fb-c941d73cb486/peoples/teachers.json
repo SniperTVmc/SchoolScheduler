@@ -1,0 +1,27 @@
+{
+  "dca70f54-701b-4085-a6d3-d76a2c3ecea9": {
+    "firstName": "Robert",
+    "lastName": "Miles",
+    "subjectTeach": "FRENCH"
+  },
+  "b4f08d84-5d13-4e5d-89ef-f3dc9cb5a1a7": {
+    "firstName": "Laura",
+    "lastName": "Baker",
+    "subjectTeach": "MATHEMATICS"
+  },
+  "e5d9b9b1-07f7-41c5-94de-60eaffb0c8a6": {
+    "firstName": "Daniel",
+    "lastName": "Carter",
+    "subjectTeach": "PHYSICS_CHEMISTRY"
+  },
+  "c8d2b79f-18b2-4500-bb7d-d3a1a7f56dbf": {
+    "firstName": "Sarah",
+    "lastName": "Watson",
+    "subjectTeach": "HISTORY_GEOGRAPHY"
+  },
+  "a2f3f9d6-6457-4a5b-a6d7-b8752ccfa7c2": {
+    "firstName": "James",
+    "lastName": "Evans",
+    "subjectTeach": "SCIENCES"
+  }
+}

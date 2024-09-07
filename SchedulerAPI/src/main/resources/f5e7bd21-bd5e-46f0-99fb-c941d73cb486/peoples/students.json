@@ -1,0 +1,52 @@
+{
+  "e576f26b-6441-4171-908e-eff53737f1e7": {
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "grade": "TWELFTH"
+  },
+  "a9c9f3a4-2391-4e1e-bf5d-f0728e5404da": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "grade": "TWELFTH"
+  },
+  "b2d7f25f-0adf-4b71-899d-b8242cb5d7e2": {
+    "firstName": "Emily",
+    "lastName": "Johnson",
+    "grade": "TWELFTH"
+  },
+  "d1f305b7-40de-4ed9-9505-f7f3f3a2a7d6": {
+    "firstName": "Michael",
+    "lastName": "Brown",
+    "grade": "TWELFTH"
+  },
+  "f7b2cb8a-dfb9-4bc3-a6f1-4f5fc5776d1d": {
+    "firstName": "Sophia",
+    "lastName": "Williams",
+    "grade": "TWELFTH"
+  },
+  "e4c5a3b9-9483-4786-b789-67a929657b1e": {
+    "firstName": "Liam",
+    "lastName": "Jones",
+    "grade": "TWELFTH"
+  },
+  "d8f2e4f6-82a2-42df-a1f5-726a57bb4ae6": {
+    "firstName": "Olivia",
+    "lastName": "Garcia",
+    "grade": "TWELFTH"
+  },
+  "c6a07dc5-0c69-4c9e-9e9e-92e162d5a0da": {
+    "firstName": "Noah",
+    "lastName": "Martinez",
+    "grade": "TWELFTH"
+  },
+  "f05b05be-f68e-4cde-8728-450a3de871bd": {
+    "firstName": "Isabella",
+    "lastName": "Davis",
+    "grade": "TWELFTH"
+  },
+  "a4f91a32-5163-4dd9-85ef-3a02b7c252d2": {
+    "firstName": "Mason",
+    "lastName": "Rodriguez",
+    "grade": "TWELFTH"
+  }
+}

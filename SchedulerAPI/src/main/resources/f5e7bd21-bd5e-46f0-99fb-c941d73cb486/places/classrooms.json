@@ -1,0 +1,16 @@
+{
+  "bc5fe8b5-8381-4505-9869-a0e8012d44a9": {
+    "building": "1d7a39d2-f065-49b8-84b0-7504b680189d",
+    "floor": "0",
+    "displayName": "A001",
+    "maxCapacity": "24",
+    "type": "BASIC"
+  },
+  "20246fd4-48aa-4506-8c42-45bed44ab075": {
+    "building": "1d7a39d2-f065-49b8-84b0-7504b680189d",
+    "floor": "0",
+    "displayName": "A002",
+    "maxCapacity": "24",
+    "type": "LABORATORY"
+  }
+}
