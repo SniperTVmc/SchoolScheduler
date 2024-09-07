@@ -37,6 +37,7 @@ build/
 
 # Other
 .gitattributes
+/out/
 
 # Compiled class file
 *.class
