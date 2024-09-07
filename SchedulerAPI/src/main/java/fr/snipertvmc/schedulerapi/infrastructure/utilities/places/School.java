@@ -25,7 +25,7 @@ public class School {
 	// -------------------------------------------------- //
 
 
-	public UUID getUuid() {
+	public UUID getUUID() {
 		return uuid;
 	}
 

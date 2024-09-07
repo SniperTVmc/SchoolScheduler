@@ -27,7 +27,7 @@ public class Teacher {
 	// -------------------------------------------------- //
 
 
-	public UUID getUuid() {
+	public UUID getUUID() {
 		return uuid;
 	}
 

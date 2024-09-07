@@ -27,7 +27,7 @@ public class Student {
 	// -------------------------------------------------- //
 
 
-	public UUID getUuid() {
+	public UUID getUUID() {
 		return uuid;
 	}
 

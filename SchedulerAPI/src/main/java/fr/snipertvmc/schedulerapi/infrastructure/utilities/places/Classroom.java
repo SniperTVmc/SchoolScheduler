@@ -28,7 +28,7 @@ public class Classroom {
 	// -------------------------------------------------- //
 
 
-	public UUID getUuid() {
+	public UUID getUUID() {
 		return uuid;
 	}
 
