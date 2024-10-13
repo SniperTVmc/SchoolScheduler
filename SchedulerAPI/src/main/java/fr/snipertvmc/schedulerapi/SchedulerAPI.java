@@ -3,13 +3,18 @@ package fr.snipertvmc.schedulerapi;
 import fr.snipertvmc.schedulerapi.managers.data.DataManager;
 import fr.snipertvmc.schedulerapi.utilities.ConsoleLogger;
 
-public class Main {
+public class SchedulerAPI {
 
 
 	// -------------------------------------------------- //
 
 
-	private static Main instance;
+	private static SchedulerAPI schedulerAPI;
+
+	private static DataManager dataManager;
+
+
+	// -------------------------------------------------- //
 
 
 	public static void main(String[] args) {
@@ -34,8 +39,19 @@ public class Main {
 	// -------------------------------------------------- //
 
 
-	public static Main getInstance() {
-		return instance;
+	public static SchedulerAPI get() {
+		if (schedulerAPI == null) {
+			schedulerAPI = new SchedulerAPI();
+		}
+		return schedulerAPI;
+	}
+
+
+	// -------------------------------------------------- //
+
+
+	public static DataManager getDataManager() {
+		return DataManager.getInstance();
 	}
 
 
