@@ -1,37 +1,40 @@
 package fr.snipertvmc.schedulerapi.utilities;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import fr.snipertvmc.schedulerapi.Main;
+import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
+import com.google.gson.reflect.TypeToken;
+import fr.snipertvmc.schedulerapi.SchedulerAPI;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.lang.reflect.Type;
 import java.util.Map;
 
 public class JsonUtils {
 
 
-	private static final ObjectMapper objectMapper = new ObjectMapper();
+	// -------------------------------------------------- //
+
+
+	private static final Gson gson = new Gson();
 
 
 	// -------------------------------------------------- //
 
 
 	public static String mapToJson(Map<String, Object> map) {
-		try {
-			return objectMapper.writeValueAsString(map);
-		} catch (JsonProcessingException exception) {
-			throw new RuntimeException(exception);
-		}
+		return gson.toJson(map);
 	}
 
 
 	public static Map<String, Object> jsonToMap(String json) {
+
 		try {
-			return objectMapper.readValue(json, new TypeReference<>(){});
-		} catch (JsonProcessingException exception) {
+			Type type = new TypeToken<Map<String, Object>>() {}.getType();
+			return gson.fromJson(json, type);
+
+		} catch (JsonSyntaxException exception) {
 			throw new RuntimeException(exception);
 		}
 	}
@@ -41,11 +44,16 @@ public class JsonUtils {
 
 
 	public static Map<String, Object> loadJson(String filePath) {
-		try (InputStream inputStream = Main.class.getResourceAsStream("/" + filePath)) {
+
+		try (InputStream inputStream = SchedulerAPI.class.getResourceAsStream("/" + filePath)) {
 			if (inputStream == null) {
 				throw new IOException("File not found: " + filePath);
 			}
-			return objectMapper.readValue(inputStream, new TypeReference<>() {});
+
+			InputStreamReader reader = new InputStreamReader(inputStream);
+			Type type = new TypeToken<Map<String, Object>>() {}.getType();
+			return gson.fromJson(reader, type);
+
 		} catch (IOException exception) {
 			throw new RuntimeException("Error loading JSON file", exception);
 		}
