@@ -9,18 +9,13 @@ public class Main {
 	private static Main instance;
 
 
-	public static void main(String[] args) {
-
-		System.out.println("Hello world!");
-
-		//instance = this;
-	}
-
-
 	// -------------------------------------------------- //
 
 
 	public static Main getInstance() {
+		if (instance == null) {
+			instance = new Main();
+		}
 		return instance;
 	}
 
