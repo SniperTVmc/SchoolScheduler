@@ -1,16 +1,53 @@
-# School Scheduler
-### ~~----------------------------------------------------------------------------------------------------~~
+<img src="assets/banner-default.png" alt="Logo" width="720">
 
-### Hello there! 👋<br>
-&emsp;Welcome on my school timetable generator project!<br>
-<br>
-&emsp;Ever since I was a kid, I always thought that programs were used to create the different schedules, and the different classes.<br>
-&emsp;But not really, it turns out that it was actually the supervisors or administrative staff who were in charge. (Of course, one by one, manually)<br>
-&emsp;That's why I asked myself, why not create this program?
-&emsp;Well, that's what I've got in mind, even though I'm well aware that I'm going to run into a lot of difficulties, mainly with the algorithm, which is likely to be very impressive.<br>
-&emsp;But I don't want to give up hope, and want to make it possible. 💪<br>
-<br>
-&emsp;What's more, I want to set up a bunch of options, allowing the schedules to be adapted to each school.<br>
-&emsp;For the time being, I'm basing my project on the French school system, but if it is successful, I'll continue it on a European scale first, then on a worldwide scale.<br>
-### ❓ For any questions or further information, please contact me through [my networks](https://devart.bio/sniper_tvmc).
-### ~~----------------------------------------------------------------------------------------------------~~
+# SchoolScheduler
+
+Generate schedules for your school quickly and easily, with a wide range of customization options.
+
+[![Download](https://img.shields.io/github/downloads/SniperTVmc/SchoolScheduler/total?style=for-the-badge)](https://github.com/SniperTVmc/SchoolScheduler/releases/)
+[![License](https://img.shields.io/badge/MIT-License-blue?style=for-the-badge)](https://github.com/SniperTVmc/SchoolScheduler/blob/Main/LICENSE)
+[![CodeFactor](https://www.codefactor.io/repository/github/snipertvmc/schoolscheduler/badge?style=for-the-badge)](https://www.codefactor.io/repository/github/snipertvmc/schoolscheduler)
+
+<!--
+## Preview / Screenshots
+
+### __Exemple1__
+
+<details>
+  <br>
+  <img src=https://media.tenor.com/qMZe3e1Er7EAAAAC/example.gif>
+  <br>
+</details>
+
+### __Exemple2__
+
+<details>
+  <br>
+  <img src=https://media.tenor.com/qMZe3e1Er7EAAAAC/example.gif>
+  <br>
+</details>
+-->
+
+## How to use SchoolScheduler ?
+
+Requirements:
+
+- Java version: 22+
+
+*Documentation writing in progress...*
+
+## API Usage/Examples
+
+```java
+
+// API WILL BE AVAILABLE IN A FUTURE UPDATE
+
+```
+
+## License
+
+[MIT License](https://github.com/SniperTVmc/SchoolScheduler/blob/Main/LICENSE)
+
+## Support
+
+For support, please use the [issues](https://github.com/SniperTVmc/SchoolScheduler/issues) category.
