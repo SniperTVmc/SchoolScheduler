@@ -16,4 +16,75 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+
+	<build>
+		<!-- Output directory -->
+		<directory>G:\Sniper_TVmc\Développement\JAVA\IntelliJ WorkSpace\SchoolScheduler\out\SchedulerCore</directory>
+
+		<plugins>
+
+			<!-- Maven Compiler Plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.13.0</version>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+
+			<!-- Maven Jar Plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.4.2</version>
+				<configuration>
+					<outputDirectory>G:\Sniper_TVmc\Développement\JAVA\IntelliJ WorkSpace\SchoolScheduler\out\SchedulerCore</outputDirectory>
+					<archive>
+						<manifest>
+							<mainClass>fr.snipertvmc.schedulercore.Main</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+
+			<!-- Maven Shade Plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.2.4</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>G:\Sniper_TVmc\Développement\JAVA\IntelliJ WorkSpace\SchoolScheduler\out\SchedulerCore</outputDirectory>
+							<transformers>
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>fr.snipertvmc.schedulercore.SchedulerCore</mainClass>
+								</transformer>
+							</transformers>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+
+		<!-- SchedulerAPI Dependency -->
+		<dependency>
+			<groupId>fr.snipertvmc</groupId>
+			<artifactId>schedulerapi</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/../out/SchedulerAPI/SchedulerAPI-1.0.0.jar</systemPath>
+		</dependency>
+	</dependencies>
+
 </project>
